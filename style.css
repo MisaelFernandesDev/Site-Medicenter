@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px;
+    font-size: 14px;
+    color: #727272;
+
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #ffffff;
+}
+.menuMobile {
+    display: none;
+    width: 35px;
+    height: 30px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('imagens/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+
+}
+
+.column {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 335px;
+
+}
+
+.banner_headline h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 30px 0;
+    padding: 0;
+    max-width: 420px;
+
+
+}
+
+.banner_options {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.banner_title {
+    font-size: 21px;
+    margin-bottom: 20px;
+
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #39aae1;
+
+    /* display: flex;
+flex-direction: column; */
+
+}
+
+.banner2 {
+
+    background-color: #1787be;
+}
+
+.banner3 {
+    background-color: #3737e9;
+}
+
+.banner-desc {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+
+}
+
+.banner-dia {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ffffff23;
+
+}
+
+.banner-dia-sem,
+.banner-dia-sem-horario {
+    margin-bottom: 15px;
+    padding: 0px;
+
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+
+    flex: 2;
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news-date {
+    display: flex;
+}
+
+.news-posted-at {
+    padding: 10px;
+    background-color: #3737e9;
+    color: white;
+    font-size: 12px;
+}
+
+.news-coments {
+    background-color: #1787be;
+    padding: 10px;
+    font-size: 12px;
+    margin-left: 2px;
+    color: white;
+}
+
+.news-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: #000000;
+}
+
+.news-resume {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/* section Aside */
+#geral aside {
+
+    flex: 1;
+
+}
+
+.widget {
+
+    margin-top: 30px;
+}
+
+.widget-title {
+
+    margin-bottom: 30px;
+}
+
+.widget-title-text {
+    color: #000000;
+    font-size: 18px;
+
+}
+
+.widget-title-bar {
+    border-bottom: 2px solid darkcyan;
+    margin-top: 9px;
+    width: 50px;
+}
+
+.widget-primary {
+    background-color: #3737e9;
+    padding: 10px;
+
+    color: #ffffff;
+}
+
+.primary-cont {
+    height: 109px;
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-image {
+    margin-top: 18px;
+}
+
+.pimary-cont-text {
+    font-size: 14px;
+    margin: 34px 10px 0;
+    color: #555;
+
+}
+
+.buttons-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+
+}
+
+.button-details,
+.button-timetable {
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 2px;
+    background-color: #1b1bc0;
+
+}
+
+.buttons-area a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#add-service {
+    margin-top: 30px;
+}
+
+.widget-add {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #55555544;
+}
+
+.widget-add-service {
+    color: #555;
+}
+
+.add a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.make {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.make-text {
+    margin-bottom: 30px;
+    font-size: 13px;
+    align-self: center;
+    color: #555;
+}
+
+.area-contact {
+
+
+    border-top: 1px solid #55555544;
+    border-bottom: 1px solid #55555544;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+}
+
+.contact-personal {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.personal-style {
+    color: #555;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container flexcolumn */
+.flexcolumn {
+    flex-direction: column;
+
+}
+
+.footer-menu {
+    display: flex;
+
+}
+
+.footer-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.fm1,
+.fm2,
+.fm3 {
+
+    flex: 1;
+    color: #ffffff;
+
+
+}
+
+.fm1 {
+    background-color: #39aae1;
+
+}
+
+.fm2 {
+
+    background-color: #1787be;
+}
+
+.fm3 {
+    background-color: #3737e9;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-area-item {
+    flex: 1;
+}
+
+footer .widget-title-text {
+    color: #ffffff;
+}
+
+.footer-copy {
+    height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    line-height: 40px;
+    border-top: 1px solid #2c2c2c;
+    margin-right: 20px;
+}
+
+
+
+@media(max-width:650px) {
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #ffffffc7;
+        width: 100%;
+        align-items: center;
+    }
+
+    .banner_headline {
+        padding: 20px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+
+    .banner_headline h2 {
+        font-size: 15px;
+        max-width: 300px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    article {
+        min-width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    .footer-menu {
+        flex-direction: column;
+         
+      }
+
+    .footer-area {
+        flex-direction: flex;
+        padding: 20px;
+    }
+
+    .news-title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-copy {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+}
+
+@media(max-width: 990px) {
+
+    .logo {
+        padding-left: 20px;
+
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #ffffffc7;
+        width: 100%;
+        align-items: center;
+
+
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  
+
+    .banner_headline {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .news-title {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .footer-menu {
+       margin: 0 20px 0 20px
+    }
+    .footer-area {
+      
+        padding: 20px;
+    }
+    .footer-copy {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    #banner {
+        height: auto;
+
+    }
+    
+
+}
